@@ -12,6 +12,7 @@ dependencies:
   bloc: ^8.0.2
   flutter_bloc: ^8.0.1
   equatable: ^2.0.3
+  web_socket_channel: ^2.1.0
 
 dev_dependencies:
   flutter_test:

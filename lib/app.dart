@@ -1,4 +1,6 @@
-import 'package:blocLearn/pages/timer_page.dart';
+import 'package:blocLearn/screens/socket_screen.dart';
+import 'package:blocLearn/screens/socket_screen_streams.dart';
+import 'package:blocLearn/screens/timer_page.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatelessWidget {
@@ -14,7 +16,7 @@ class App extends StatelessWidget {
           secondary: Color.fromRGBO(72, 74, 126, 1),
         ),
       ),
-      home: const TimerPage(),
+      home: const SocketStream(),
     );
   }
 }

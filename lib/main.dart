@@ -1,7 +1,12 @@
+import 'package:bloc/bloc.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_infinite_list/app.dart';
+import 'package:flutter_infinite_list/simple_bloc_observer.dart';
 
-
-import 'package:flutter/cupertino.dart';
-
-import 'app.dart';
-
-void main() => runApp(App());
+void main() {
+  BlocOverrides.runZoned(
+        () => runApp(App()),
+    blocObserver: SimpleBlocObserver(),
+  );
+}
